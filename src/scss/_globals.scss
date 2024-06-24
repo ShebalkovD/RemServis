@@ -2,6 +2,8 @@
 
 // Основные цвета
 $accent: #118CE5;
+$disabled_text: #C0C0C0;
+$section_bg: #FAFAFC;
 
 
 
@@ -26,4 +28,32 @@ a {
 .container {
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    width: 26rem;
+    height: 6rem;
+
+    margin-top: 2.4rem;
+    padding: 2.6rem 3.2rem;
+
+    border-radius: 1.2rem;
+    position: relative;
+
+    background: linear-gradient(94.05deg, #C403F4 -50.53%, #0092D1 119.48%);
+    box-shadow: (2px 4px 22px rgba(0, 0, 0, 0.2));;
+    color: #fff;
+    font-size: 3.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateX(2rem)
+    }
+
 }
