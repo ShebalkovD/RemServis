@@ -1,0 +1,153 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: "Roboto Condensed";
+  src: url("src/fonts/static/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: "Roboto Condensed";
+  src: url("src/fonts/static/RobotoCondensed-Medium.ttf");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "Roboto Condensed";
+  src: url("src/fonts/static/RobotoCondensed-SemiBold.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  src: url("src/fonts/static/RobotoCondensed-Bold.ttf");
+}
+html {
+  font-size: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #000;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.navigation {
+  height: 8rem;
+  width: 100%;
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navigation .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.navigation_menu {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+.navigation_menu-item {
+  height: inherit;
+  padding-top: 2.6rem;
+  font-size: 2.4rem;
+  margin: 0 1.2rem;
+}

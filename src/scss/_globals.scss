@@ -1,0 +1,29 @@
+@import "fonts.scss";
+
+// Основные цвета
+$accent: #118CE5;
+
+
+
+
+html {
+    font-size: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-size: 1.6rem;
+    color: #000;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
