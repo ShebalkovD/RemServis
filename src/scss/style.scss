@@ -4,9 +4,10 @@
 
 .navigation {
 
-    height: 8rem;
+    height: 6rem;
     width: 100%;
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
 
@@ -28,8 +29,8 @@
 
         &-item {
             height: inherit;
-            padding-top: 2.8rem;
-            font-size: 2.4rem;
+            padding-top: 2rem;
+            font-size: 2rem;
             margin: 0 1.2rem;
             color: $disabled_text;
 
@@ -50,13 +51,13 @@
         transition: all 0.2s ease-in-out;
 
         &-tel {
-            font-size: 2.4rem;
+            font-size: 2rem;
             color: #000;
             margin-left: 2rem;
         }
 
         &-img {
-            height: 2.4rem;
+            height: 2rem;
         }
 
         &:hover {
@@ -65,10 +66,18 @@
     }
 }
 
+.logo {
+    display: block;
+    height: 4rem;
+    img {
+        height: 100%;
+    }
+}
+
 .header {
     background-color: $section_bg;
-    padding-top: 8rem;
-    height: 100vh;
+    padding-top: 6rem;
+    min-height: 100vh;
     position: relative;
 
 
@@ -91,7 +100,7 @@
 
         &-call {
             color: #000;
-            margin-top: 10vh;
+            margin-top: 15vh;
             font-size: 2.4rem;
         }
     }
@@ -106,4 +115,70 @@
     }
 
 
+}
+
+.service {
+    min-height: 100vh;
+    padding-top: 8rem;
+    background-color: #fff;
+    position: relative;
+
+    .section_title span{
+        background: linear-gradient(94.05deg, #C403F4 -50.53%, #0092D1 119.48%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+    }
+
+    &_list {
+        display: block;
+        background-color: $section_bg;
+        width: 40rem;
+        height: 60rem;
+        padding: 9rem 4.8rem;
+        border-radius: 2.4rem;
+        list-style: none;
+
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+
+        &-item {
+            font-size: 1.6rem;
+            margin-top: 3.6rem;
+            padding-left: 4.6rem;
+            position: relative;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &::before {
+                content: url("src/img/list-marker.svg");
+                position: absolute;
+                left: 0;
+                top: 0.5rem;
+            }
+        }
+
+        &::before {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            border-radius: 2.4rem;
+            position: absolute;
+            top: -2.4rem;
+            left: -2.4rem;
+            background-color: red;
+            z-index: -1;
+        }
+        
+    }
 }

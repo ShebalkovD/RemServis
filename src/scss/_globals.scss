@@ -36,7 +36,7 @@ a {
     height: 6rem;
 
     margin-top: 2.4rem;
-    padding: 2.6rem 3.2rem;
+    padding: 1.2rem 3.2rem;
 
     border-radius: 1.2rem;
     position: relative;
@@ -44,7 +44,7 @@ a {
     background: linear-gradient(94.05deg, #C403F4 -50.53%, #0092D1 119.48%);
     box-shadow: (2px 4px 22px rgba(0, 0, 0, 0.2));;
     color: #fff;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
 
     display: flex;
     justify-content: space-between;
@@ -56,4 +56,20 @@ a {
         transform: translateX(2rem)
     }
 
+}
+
+.divider {
+    display: block;
+    width: 12rem;
+    height: 4rem;
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section_title {
+    font-size: 3.6rem;
+    text-align: center;
+    line-height: 3.6rem;
 }
