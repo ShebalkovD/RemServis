@@ -203,8 +203,8 @@ a {
   font-size: 2rem;
   margin: 0 1.2rem;
   color: #C0C0C0;
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 .navigation_menu-item:hover {
   color: #118CE5;
@@ -270,6 +270,30 @@ a {
   top: 15vh;
 }
 
+.list_wrapper {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 40rem;
+  height: 60rem;
+  border-radius: 2.4rem;
+}
+.list_wrapper::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  border-radius: 2.4rem;
+  position: absolute;
+  top: -2.4rem;
+  left: -2.4rem;
+  background: linear-gradient(94.05deg, #C403F4 -50.53%, #0092D1 119.48%);
+  z-index: 0;
+}
+
 .service {
   min-height: 100vh;
   padding-top: 8rem;
@@ -286,8 +310,8 @@ a {
 .service_list {
   display: block;
   background-color: #FAFAFC;
-  width: 40rem;
-  height: 60rem;
+  width: 100%;
+  height: 100%;
   padding: 9rem 4.8rem;
   border-radius: 2.4rem;
   list-style: none;
@@ -321,14 +345,57 @@ a {
   left: 0;
   top: 0.5rem;
 }
-.service_list::before {
-  content: " ";
+.service_info {
+  max-width: 67rem;
+}
+.service_info-text {
+  color: #000;
+  font-size: 2.4rem;
+  margin-top: 4.8rem;
+  text-align: left;
+}
+.service_info-text span {
+  color: #118CE5;
+}
+.service_info-text:first-child {
+  margin-top: 0;
+}
+.service_info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12rem;
+}
+.service_info-btn {
+  background: linear-gradient(94.92deg, #C403F4 -156.51%, #0092D1 117.35%);
+  position: relative;
+  margin: 0;
+}
+.service_info-radius {
+  display: block;
+  margin-left: 4.8rem;
+  color: #118CE5;
+  border-bottom: 2px solid #118CE5;
+  font-size: 2.4rem;
+  font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 4.8rem;
+}
+.service_wrapper {
   width: 100%;
-  height: 100%;
-  border-radius: 2.4rem;
-  position: absolute;
-  top: -2.4rem;
-  left: -2.4rem;
-  background-color: red;
-  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 14rem;
 }
