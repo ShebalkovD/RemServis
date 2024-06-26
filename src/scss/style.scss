@@ -140,7 +140,7 @@
 }
 .service {
     min-height: 100vh;
-    padding-top: 8rem;
+    padding: 8rem 0;
     background-color: #fff;
     position: relative;
 
@@ -246,6 +246,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 14rem;
+    }
+}
+
+.advantages {
+    position: relative;
+    background-color: $section_bg;
+    padding: 8rem 0;
+
+    &_cards {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
         margin-top: 14rem;
     }
 }
