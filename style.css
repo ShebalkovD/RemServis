@@ -112,6 +112,10 @@ a {
   margin: 0 auto;
 }
 
+section {
+  padding: 8rem 0;
+}
+
 .btn {
   display: block;
   width: 26rem;
@@ -267,7 +271,6 @@ a {
 
 .service {
   min-height: 100vh;
-  padding: 8rem 0;
   background-color: #fff;
   position: relative;
 }
@@ -354,11 +357,48 @@ a {
 .advantages {
   position: relative;
   background-color: #FAFAFC;
-  padding: 8rem 0;
 }
 .advantages_cards {
   display: block;
   width: 100%;
   margin: 0 auto;
   margin-top: 14rem;
+}
+
+.reviews {
+  position: relative;
+}
+.reviews_list {
+  margin: 0 auto;
+  margin-top: 14rem;
+  list-style: none;
+  max-width: 90rem;
+}
+.reviews_list-item {
+  text-align: left;
+  margin-top: 8.4rem;
+}
+.reviews_list-item:first-child {
+  margin-top: 0;
+}
+.reviews_list-item h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-left: 7.6rem;
+  color: #000;
+  position: relative;
+}
+.reviews_list-item h3::before {
+  content: url("src/img/review.svg");
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: -1.5rem;
+  left: -7.6rem;
+}
+.reviews_list-item p {
+  margin-top: 2.8rem;
+  font-size: 2.4rem;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
