@@ -16,9 +16,9 @@
                 </a>
     
                 <div class="navigation_menu">
-                    <a href="#" class="navigation_menu-item">Услуги</a>
-                    <a href="#" class="navigation_menu-item">Контакты</a>
-                    <a href="#" class="navigation_menu-item">Отзывы</a>
+                    <a href="#service" class="navigation_menu-item">Услуги</a>
+                    <a href="#contacts" class="navigation_menu-item">Контакты</a>
+                    <a href="#reviews" class="navigation_menu-item">Отзывы</a>
                 </div>
     
                 <a href="tel:89282207263" class="navigation_phone">
@@ -42,7 +42,7 @@
                     Свяжитесь с нами по телефону или в мессенджере
                 </p>
 
-                <a href="#" class="header_info-btn btn">
+                <a href="#contacts" class="header_info-btn btn">
                     <span>Контакты</span>
                     <img src="src/img/arrow.svg" alt="">
                 </a>
@@ -54,7 +54,7 @@
     </header>
     
     <main class="main">
-        <section class="service">
+        <section class="service" id="service">
             <img src="src/img/divider-gray.svg" alt="" class="divider">
 
             <div class="container">
@@ -125,7 +125,7 @@
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <img src="src/img/divider-gray.svg" alt="" class="divider">
             <div class="container">
                 <h2 class="section_title">
@@ -160,36 +160,60 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <img src="src/img/divider-white.svg" alt="" class="divider">
+
+            
             <div class="container">
                 <h2 class="section_title">
                     Контакты
                 </h2>
-                <div class="contacts_wrapper">
-                    <a href="tel:89282207263" class="contacts_wrapper-tel">
-                        <h2>Леонид</h2>
-                        <div>
-                            <img src="src/img/phone_contacts_card.svg" alt="">
-                            <span>8-928-220-72-63</span>
-                        </div>
-                    </a>
 
-                    <div class="contacts_info">
-                        <div class="contacts_info-text">
-                            <p>Работаем по городам КМВ: Пятигорск   Кисловодск   Ессентуки   Железноводск   Мин-Воды</p>
-                            <p>Выезд на дом в радиусе 30 км</p>
-                            <p>Работаем без выходных с 8:00 до 21:00</p>
+                <div class="contacts_decorwrapper">
+
+                    <img src="src/img/contacts_decor_left.svg" alt="" class="contacts_wrapper-decor" id="contacts_decor_left">
+                    <img src="src/img/contacts_decor_right.svg" alt="" class="contacts_wrapper-decor" id="contacts_decor_right">
+    
+                    <div class="contacts_wrapper">
+                        
+    
+                        <a href="tel:89282207263" class="contacts_wrapper-tel">
+                            <h2>Леонид</h2>
+                            <div>
+                                <img src="src/img/phone_contacts_card.svg" alt="">
+                                <span>8-928-220-72-63</span>
+                            </div>
+                        </a>
+    
+                        <div class="contacts_info">
+                            <div class="contacts_info-text">
+                                <p>Работаем по городам КМВ: <span>Пятигорск   Кисловодск   Ессентуки   Железноводск   Мин-Воды</span> </p>
+                                <p>Выезд на дом в радиусе 30 км</p>
+                                <p>Работаем без выходных с 8:00 до 21:00</p>
+                            </div>
+                            <div class="contacts_info-socials">
+                                <a href="#">WhatsApp</a>
+                                <span>8:00-21:00</span>
+                            </div>
                         </div>
-                        <div class="contacts_info-socials">
-                            <a href="#">WhatsApp</a>
-                            <span>8:00-21:00</span>
-                        </div>
-                    </div>
-                </div> 
+                    </div> 
+                </div>
+                
             </div>
+            <img src="src/img/divider-white-reverse.svg" alt=""  class="divider_reverse" >
         </section>
     </main>
+
+    <footer class="footer">
+        <a href="#" class="footer_logo">
+            <img src="src/img/footer_logo.svg" alt="">
+        </a>
+        <div class="footer_menu">
+            <a href="#service" class="footer_menu-item">Услуги</a>
+            <a href="#contacts" class="footer_menu-item">Контакты</a>
+            <a href="#reviews" class="footer_menu-item">Отзывы</a>
+        </div>
+    </footer>
     
 </body>
 </html>

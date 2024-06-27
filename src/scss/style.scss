@@ -160,6 +160,7 @@
         background-color: $section_bg;
         width: 100%;
         height: 100%;
+        box-shadow: $card_shadow;
         padding: 9rem 4.8rem;
         border-radius: 2.4rem;
         list-style: none;
@@ -310,16 +311,40 @@
     }
 }
 
+
+#contacts_decor_left {
+    top: 10rem;
+    left: -20rem;
+}
+#contacts_decor_right {
+    bottom: 5rem;
+    right: -25rem;
+}
+
 .contacts {
-    background-color: #fff;
+    position: relative;
+    background-color: $section_bg;
+    padding-bottom: 16rem;
+    overflow: hidden;
 
-    &_wrapper {
-        max-width: 120rem;
-        height: 60rem;
-
-        padding: 8rem 13rem;
+    &_decorwrapper {
+        position: relative;
+        height: fit-content;
         margin: 0 auto;
         margin-top: 14rem;
+        max-width: 120rem;
+
+
+    }
+
+    &_wrapper {
+        height: 60rem;
+        position: relative;
+        z-index: 100;
+        padding: 8rem 13rem;
+
+
+        
 
         border-radius: 2.4rem;
         background-color: #fff;
@@ -363,6 +388,114 @@
             }
         }
 
+        &-decor {
+            position: absolute;
+            z-index: 1;
+
+        }
+
+        
 
     }
+
+    &_info {
+        margin-top: 10rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-text {
+            max-width: 54rem;
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+
+            span {
+                color: $accent;
+            }
+
+            p {
+                margin-bottom: 2.4rem;
+
+            }
+        }
+
+        &-socials {
+
+            font-size: 2.4rem;
+            font-weight: 600;
+
+            a {
+                display: block;
+                position: relative;
+
+                &::before {
+                    content: url("src/img/whatsapp.svg");
+                    display: block;
+
+                    width: 3.8rem;
+                    height: 3.8rem;
+                
+                    position: absolute;
+                    top: -1rem;
+                    left: -6.2rem;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            span {
+                display: block;
+                margin-top: 2.6rem;
+                position: relative;
+
+                &::before {
+                    content: url("src/img/time.svg");
+                    display: block;
+
+                    width: 4rem;
+                    height: 4rem;
+                
+                    position: absolute;
+                    top: -0.8rem;
+                    left: -6.3rem;
+                }
+            }
+        }
+    }
 }
+
+.footer {
+    padding: 3.6rem 0;
+    text-align: center;
+
+    &_logo {
+        margin: 0 auto;
+        width: 17rem;
+    }
+
+    &_menu {
+        margin: 0 auto;
+        margin-top: 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 1.5rem;
+
+        &-item {
+            margin: 0 2.4rem;
+            font-size: 2.4rem;
+            color: $disabled_text;
+            text-align: center;
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
+
+

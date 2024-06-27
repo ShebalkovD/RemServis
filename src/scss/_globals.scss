@@ -17,6 +17,8 @@ html {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
+    scroll-behavior: smooth;
 }
 
 body {
@@ -63,6 +65,16 @@ section {
         transform: translateX(2rem)
     }
 
+}
+
+.divider_reverse {
+    display: block;
+    width: 12rem;
+    height: 4rem;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .divider {
