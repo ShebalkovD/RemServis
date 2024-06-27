@@ -22,6 +22,7 @@
     }
 
     &_menu {
+        margin-left: 2rem;
         width: fit-content;
         display: flex;
         justify-content: center;
@@ -138,6 +139,7 @@
         z-index: 0;
     }
 }
+
 .service {
     min-height: 100vh;
     
@@ -305,5 +307,62 @@
                 color: #000;
             }
         }
+    }
+}
+
+.contacts {
+    background-color: #fff;
+
+    &_wrapper {
+        max-width: 120rem;
+        height: 60rem;
+
+        padding: 8rem 13rem;
+        margin: 0 auto;
+        margin-top: 14rem;
+
+        border-radius: 2.4rem;
+        background-color: #fff;
+
+        box-shadow: $card_shadow;
+
+        &-tel {
+            background: linear-gradient(112.92deg, #C403F4 -104.21%, #0092D1 100.43%);
+            display: block;
+            width: 46rem;
+            padding: 2.4rem 1rem;
+            color: #fff;
+            border-radius: 2.4rem;
+            text-align: center;
+            box-shadow: $card_shadow;
+            margin: 0 auto;
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: translateY(-1rem);
+            }
+
+            h2 {
+                font-size: 4.8rem;
+                font-weight: 600;
+            }
+
+            div {
+                margin: 0 auto;
+                margin-top: 2.4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    font-size: 2.8rem;
+                    font-weight: 400;
+                    margin-left: 2.4rem;
+                }
+            }
+        }
+
+
     }
 }
