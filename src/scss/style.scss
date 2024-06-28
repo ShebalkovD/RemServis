@@ -7,7 +7,7 @@
     height: 6rem;
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 200;
     top: 0;
     left: 0;
 
@@ -86,7 +86,7 @@
 
     &_info {
         margin-top: 25vh;
-        
+        max-width: 77rem;
         &-heading {
             font-size: 5.4rem;
             line-height: 5.4rem;
@@ -112,7 +112,8 @@
 
         position: absolute;
         right: 10%;
-        top: 15vh;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
 
@@ -292,10 +293,14 @@
                 position: relative;
 
                 &::before {
-                    content: url("src/img/review.svg");
+                    content: "";
                     display: block;
                     width: 6rem;
                     height: 6rem;
+                    background-image: url("src/img/review.svg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
                     position: absolute;
                     top: -1.5rem;
                     left: -7.6rem;
@@ -430,8 +435,13 @@
                 position: relative;
 
                 &::before {
-                    content: url("src/img/whatsapp.svg");
+                    content: "";
                     display: block;
+
+                    background-image: url("src/img/whatsapp.svg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
 
                     width: 3.8rem;
                     height: 3.8rem;
@@ -452,8 +462,13 @@
                 position: relative;
 
                 &::before {
-                    content: url("src/img/time.svg");
+                    content: "";
                     display: block;
+
+                    background-image: url("src/img/time.svg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
 
                     width: 4rem;
                     height: 4rem;
@@ -472,8 +487,13 @@
     text-align: center;
 
     &_logo {
+        display: block;
         margin: 0 auto;
         width: 17rem;
+
+        img {
+            width: 100%;
+        }
     }
 
     &_menu {
@@ -497,5 +517,7 @@
         }
     }
 }
+
+@import "adaptive.scss";
 
 

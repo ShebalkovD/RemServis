@@ -1,0 +1,108 @@
+@media(max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+
+    html {
+        font-size: 8px;
+    }
+
+    .header {
+
+        &_info {
+            max-width: 60rem;
+
+            
+        }
+
+        &_img {
+            max-width: 40%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .header {
+
+        &_info {
+
+            &-heading {
+                font-size: 4.2rem;
+                line-height: 4.2rem;
+            }
+
+            &-location {
+                font-size: 1.8rem;
+            }
+
+            &-call {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .service {
+
+        &_wrapper {
+            flex-direction: column-reverse;
+
+        }
+
+        .list_wrapper {
+
+            margin-top: 20rem;
+            width: 100%;
+            min-height: 60rem;
+            height: fit-content;
+            text-align: left;
+        }
+
+        &_info {
+            max-width: 100%;
+
+            &-text {
+                width: 100%;
+            }
+        }
+
+        &_list {
+            display: block;
+
+            &-item {
+                font-size: 2.4rem;
+                margin-top: 6.6rem;
+                padding-left: 6.6rem;
+
+                &::before {
+                    top: -0.5rem;
+                }
+            }
+        }
+    }
+
+    .contacts{
+
+        &_info {
+            flex-direction: column;
+            align-items: start;
+
+            &-socials {
+                padding-left: 6rem;
+                margin-top: 2.4rem;
+            }
+
+            &-text {
+                max-width: 100%;
+            }
+        }
+
+        &_wrapper {
+            height: fit-content;
+        }
+    }
+}
