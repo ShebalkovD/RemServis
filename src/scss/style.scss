@@ -21,6 +21,66 @@
         height: 100%;
     }
 
+    &_burgerbtn {
+        display: none;
+        width: 4rem;
+        height: 4rem;
+        position: relative;
+        border-radius: 0.5rem;
+        transition: all 0.2s ease-in-out;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 2.5rem;
+            height: 2.5rem;
+            
+            background-image: url("src/img/burger_x.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0.8rem;
+            right: 0.8rem;
+
+            transition: all 0.3s ease-in-out;
+            transform: translateY(-4rem);
+            opacity: 0;
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 4rem;
+            height: 3rem;
+            
+            background-image: url("src/img/burger_menu.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0.5rem;
+            right: 0;
+            transition: all 0.3s ease-in-out;
+            opacity: 1;
+        }
+
+        &.active::before {
+            transform: none;
+            opacity: 1;
+        }
+        &.active::after {
+            transform: translateY(4rem);
+            opacity: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+            // background-color: #09387e56;
+        }
+        
+    }
+
     &_menu {
         margin-left: 2rem;
         width: fit-content;
@@ -74,6 +134,9 @@
         height: 100%;
     }
 }
+.logo_mobile {
+    display: none;
+}
 
 .header {
     background-color: $section_bg;
@@ -83,6 +146,10 @@
 
 
     overflow: hidden;
+
+    &_mobile-img {
+        display: none;
+    }
 
     &_info {
         margin-top: 25vh;
@@ -264,6 +331,10 @@
         width: 100%;
         margin: 0 auto;
         margin-top: 14rem;
+
+        &-mobile {
+            display: none;
+        }
     }
 }
 
