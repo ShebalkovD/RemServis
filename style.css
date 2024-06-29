@@ -958,11 +958,10 @@ section {
     font-size: 1.8rem;
   }
   #contacts_decor_left {
-    left: -70%;
-    top: 25rem;
+    display: none;
   }
   #contacts_decor_right {
-    right: -70%;
+    display: none;
   }
 }
 @media (max-width: 400px) {
