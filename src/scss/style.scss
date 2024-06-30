@@ -28,7 +28,7 @@
         height: 4rem;
         position: relative;
         border-radius: 0.5rem;
-        transition: all 0.2s ease-in-out;
+        // transition: all 0.3s ease-in-out;
         overflow: hidden;
 
         &::before {
@@ -45,7 +45,7 @@
             top: 0.8rem;
             right: 0.8rem;
 
-            transition: all 0.3s ease-in-out;
+            transition: all 0.2s ease-in-out;
             transform: translateY(-4rem);
             opacity: 0;
         }
@@ -62,7 +62,7 @@
             position: absolute;
             top: 0.5rem;
             right: 0;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.2s ease-in-out;
             opacity: 1;
         }
 

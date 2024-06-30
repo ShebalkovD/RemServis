@@ -303,8 +303,6 @@ section {
   height: 4rem;
   position: relative;
   border-radius: 0.5rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   overflow: hidden;
 }
 .navigation_burgerbtn::before {
@@ -319,8 +317,8 @@ section {
   position: absolute;
   top: 0.8rem;
   right: 0.8rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-transform: translateY(-4rem);
       -ms-transform: translateY(-4rem);
           transform: translateY(-4rem);
@@ -338,8 +336,8 @@ section {
   position: absolute;
   top: 0.5rem;
   right: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 .navigation_burgerbtn.active::before {
