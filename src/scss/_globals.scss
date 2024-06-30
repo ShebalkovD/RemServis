@@ -97,3 +97,15 @@ section {
     text-align: center;
     line-height: 3.6rem;
 }
+
+.logo {
+    display: block;
+    height: 4rem;
+    img {
+        height: 100%;
+    }
+}
+
+.logo_mobile {
+    display: none;
+}

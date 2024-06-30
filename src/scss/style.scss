@@ -1,5 +1,6 @@
 @import "reset.scss";
 @import "globals.scss";
+@import "mobile.scss";
 
 
 .navigation {
@@ -127,17 +128,6 @@
     }
 }
 
-.logo {
-    display: block;
-    height: 4rem;
-    img {
-        height: 100%;
-    }
-}
-.logo_mobile {
-    display: none;
-}
-
 .header {
     background-color: $section_bg;
     padding-top: 6rem;
@@ -185,7 +175,6 @@
 
 
 }
-
 
 .list_wrapper {
     position: relative;
